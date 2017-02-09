@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+/* STRUCTURE */
+
+#webalusta-pagewrap {
+	padding: 5px;
+	width: 975px;
+	margin: 85px auto;
+}
+
+#webalusta-headerwrap {
+	width: 975px;
+	padding: 5px;
+	margin: 20px auto;
+}
+
+header-left {
+	height: auto;
+	padding: 5px;
+	float: left;
+}
+header-right {
+	height: auto;
+	padding: 40px 15px 10px 15px;
+	float: right;
+}
+#webalusta-content {
+	width: 740px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#webalusta-sidebar {
+	width: 215px;
+	padding: 5px 15px;
+	float: left;
+	margin-left: 5px;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#webalusta-pagewrap {
+		width: 94%;
+	}
+	#webalusta-headerwrap {
+		width: 94%;
+	}
+	#webalusta-content {
+		width: auto;
+		padding: 1% 4%;
+		flot: none;
+	}
+	
+	#webalusta-sidebar {
+		display: none;
+	}
+
+	header-left, header-right, footer {
+		padding: 1% 4%;
+	}
+
+	header-right {
+		padding: 0px;
+		float: right;
+	}
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	#webalusta-pagewrap {
+		margin: 110px auto;
+	}
+	header-right {
+		float: left;
+		height: auto;
+	}
+	header-left {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+
+}
+
+
+#webalusta-pagewrap {
+	background: #f8f8f8;
+}
+footer {
+	background: #CCCCCC;
+}
+#webalusta-sidebar {
+	background: #f0efef;
+}
+header-left, header-right, #webalusta-content, #webalusta-sidebar {
+	margin-bottom: 5px;
+}
+
+#webalusta-pagewrap, header-left, header-right, #webalusta-content, #webalusta-sidebar, footer {
+	border: solid 1px #ccc;
+}
